@@ -1,8 +1,12 @@
+import os
+
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 FPS = 60
 GROUND_Y = 635
-ASSET_ROOT = "asset palladin game"
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ASSET_ROOT = os.path.join(PROJECT_ROOT, "asset palladin game")
 
 # --- PLAYER ---
 PLAYER_ANIMATIONS = {
