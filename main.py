@@ -211,7 +211,7 @@ def main():
         )
         enemies = [enemy for enemy in enemies if not enemy.death_finished]
 
-        if regular_kills >= 1 and not boss_spawned:
+        if regular_kills >= 13 and not boss_spawned:
             boss_x = max(player.x + 650, camera_x + SCREEN_WIDTH + 100)
             boss = DemonSlimeBoss(
                 boss_x,
